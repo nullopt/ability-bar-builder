@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Ability Bar Builder - nullopt</h2>
+      <h2>Ability Bar Builder</h2>
       <header className="App-header">
         <FormGroup
           style={{
@@ -56,9 +56,7 @@ function App() {
               <Switch
                 color="success"
                 checked={revo}
-                onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-                  setRevo(event.target.checked)
-                }
+                onChange={(event: React.ChangeEvent<HTMLInputElement>) => setRevo(event.target.checked)}
               />
             }
             label="Revolution"
@@ -69,20 +67,14 @@ function App() {
               <Switch
                 color="success"
                 checked={barNumbers}
-                onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-                  setBarNumbers(event.target.checked)
-                }
+                onChange={(event: React.ChangeEvent<HTMLInputElement>) => setBarNumbers(event.target.checked)}
               />
             }
             label="Keybind Numbers"
           />
         </FormGroup>
         <div ref={exportRef} style={{ backgroundColor: "#282c34" }}>
-          <AbilityBarContainer
-            revo={revo}
-            barNumbers={barNumbers}
-            slotCount={actionBarLength}
-          />
+          <AbilityBarContainer revo={revo} barNumbers={barNumbers} slotCount={actionBarLength} />
         </div>
         <Button
           style={{ marginTop: 15 }}
