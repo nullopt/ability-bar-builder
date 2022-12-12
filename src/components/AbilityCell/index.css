@@ -1,0 +1,43 @@
+.cell-container {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #090e11;
+  border: 1px solid #30414b;
+  cursor: pointer;
+}
+
+.cell-container:not(:last-child) {
+  margin-right: 5px;
+}
+
+.ability-slot {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.ability-img {
+  width: 57px;
+  height: 57px;
+  background-size: 100% !important;
+}
+
+.ability-txt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 2px;
+  font-size: 16px;
+  text-shadow: 2px 1px black;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -ms-touch-select: none;
+  -webkit-user-select: none;
+}
